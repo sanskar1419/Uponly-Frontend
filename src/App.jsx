@@ -7,6 +7,7 @@ import useFetchApartment from "./hooks/useApartmentFetch";
 import { useApartmentsContext } from "./context/ApartmentContext";
 import useCurrentWing from "./hooks/useCurrentWing";
 import MainHeader from "./components/MainHeader/MainHeader";
+import { CircularProgress } from "@mui/material";
 
 const App = () => {
   const { fetchApartmentsCount } = useFetchApartmentCount();
@@ -29,18 +30,34 @@ const App = () => {
   }, []);
 
   return (
-    <Box
-      sx={{
-        flexGrow: 1,
-      }}
-      className="no-scrollbar"
-      padding={1.5}
-    >
-      <Grid container spacing={2}>
-        <MainHeader />
-        <MainBodyContainer />
-      </Grid>
-    </Box>
+    <>
+      {apartments ? (
+        <Box
+          sx={{
+            flexGrow: 1,
+          }}
+          className="no-scrollbar"
+          padding={1.5}
+        >
+          <Grid container spacing={2}>
+            <MainHeader />
+            <MainBodyContainer />
+          </Grid>
+        </Box>
+      ) : (
+        <Box
+          sx={{
+            display: "flex",
+            width: "100vw",
+            height: "100vh",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <CircularProgress size="3rem" />
+        </Box>
+      )}
+    </>
   );
 };
 
