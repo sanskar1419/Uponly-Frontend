@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Grid from "@mui/material/Grid2";
 import FlatDataContainer from "../FlatDataContainer/FlatDataContainer";
 import CustomPagination from "../CustomPagination/CustomPagination";
-
 import CustomFunctionalButton from "../CustomFunctionalButton/CustomFunctionalButton";
 import PropertyDetails from "../PropertyDetails/PropertyDetails";
 import { useCurrentApartmentsContext } from "../../context/CurrentApartmentContext";
 import { BookingMenuContextProvider } from "../../context/BookingMenuContext";
-import useWidth from "../../hooks/useWidth";
 
 const MainBodyContainer = () => {
   const { currentWing } = useCurrentApartmentsContext();
-  const width = useWidth();
 
   return (
     <Grid spacing={2} size={12} container marginBottom={1}>

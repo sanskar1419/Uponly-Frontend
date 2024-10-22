@@ -1,7 +1,6 @@
-import { Grid2 } from "@mui/material";
 import React from "react";
-import { useCurrentApartmentsContext } from "../../context/CurrentApartmentContext";
 import ApartmentFloor from "../ApartmentFloor/ApartmentFloor";
+import { useCurrentApartmentsContext } from "../../context/CurrentApartmentContext";
 
 const ApartmentFloors = () => {
   const { currentWing } = useCurrentApartmentsContext();

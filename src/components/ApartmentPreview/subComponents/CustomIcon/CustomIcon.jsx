@@ -7,7 +7,6 @@ const CustomIcon = ({
   padding,
   borderRadius,
   children,
-  color,
 }) => {
   return (
     <div

@@ -1,7 +1,6 @@
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import React from "react";
 import { useApartmentsContext } from "../../context/ApartmentContext";
-import useCurrentWing from "../../hooks/useCurrentWing";
 
 const SelectElement = ({ placeholder, selectHeight, minWidth }) => {
   const { apartments } = useApartmentsContext();

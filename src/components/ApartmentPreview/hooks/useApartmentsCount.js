@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { totalFlatsNumbers } from "../constants";
 import { useApartmentsCountContext } from "../context/ApartmentsCountContext";
 
 const useFetchApartmentCount = () => {
@@ -7,14 +8,14 @@ const useFetchApartmentCount = () => {
   const fetchApartmentsCount = async () => {
     setLoading(true);
     try {
-      const res = await fetch(
+      /*  const res = await fetch(
         "https://uponly-backend.onrender.com/totalFlatsNumbers"
       );
       const data = await res.json();
       if (data.error) {
         throw new Error(data.error);
-      }
-      setTotalApartmentCountDetails({ ...data });
+      } */
+      setTotalApartmentCountDetails({ ...totalFlatsNumbers });
     } catch (error) {
       console.log(error);
     } finally {

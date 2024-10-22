@@ -10,7 +10,6 @@ const useCurrentWing = () => {
   };
 
   const handleWingChange = (event, value) => {
-    console.log(value);
     setCurrentWing(apartments[value - 1]);
   };
 

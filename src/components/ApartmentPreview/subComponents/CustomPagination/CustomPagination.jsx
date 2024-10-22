@@ -8,7 +8,7 @@ import { useApartmentsContext } from "../../context/ApartmentContext";
 import { useCurrentApartmentsContext } from "../../context/CurrentApartmentContext";
 import useWidth from "../../hooks/useWidth";
 
-const CustomPagination = ({ position, bottom, padding, paginationColor }) => {
+const CustomPagination = ({ position, padding, paginationColor }) => {
   const { handleWingChange } = useCurrentWing();
   const { totalApartmentCountDetails } = useApartmentsCountContext();
   const { apartments } = useApartmentsContext();
@@ -26,7 +26,7 @@ const CustomPagination = ({ position, bottom, padding, paginationColor }) => {
       }
       alignItems="center"
       width="100%"
-      padding={padding || 2}
+      padding={padding || 1}
       spacing={1}
     >
       {totalApartmentCountDetails && (

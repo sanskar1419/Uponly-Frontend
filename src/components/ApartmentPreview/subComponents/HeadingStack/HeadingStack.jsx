@@ -2,7 +2,6 @@ import { Grid2, Typography } from "@mui/material";
 import React from "react";
 
 const HeadingStack = ({
-  gridSize,
   gridPadding,
   mainHeadingVariant,
   subHeadingVariant,

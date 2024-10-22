@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import CustomIcon from "../CustomIcon/CustomIcon";
 import Grid from "@mui/material/Grid2";
-
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import PaymentsRoundedIcon from "@mui/icons-material/PaymentsRounded";
 import FilePresentRoundedIcon from "@mui/icons-material/FilePresentRounded";
 import DashboardCustomizeRoundedIcon from "@mui/icons-material/DashboardCustomizeRounded";
 import NoteAltRoundedIcon from "@mui/icons-material/NoteAltRounded";
+import { functionalMenuList } from "../../constants";
 
 const CustomFunctionalButton = () => {
   const [functionMenu, setFunctionMenu] = useState(null);
@@ -15,14 +15,14 @@ const CustomFunctionalButton = () => {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
-        const res = await fetch(
+        /* const res = await fetch(
           "https://uponly-backend.onrender.com/functionalMenu"
         );
         const data = await res.json();
         if (data.error) {
           throw new Error(data.error);
-        }
-        setFunctionMenu([...data]);
+        } */
+        setFunctionMenu([...functionalMenuList]);
       } catch (error) {
         console.log(error);
       }

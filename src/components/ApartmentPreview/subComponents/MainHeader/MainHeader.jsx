@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
-
 import Grid from "@mui/material/Grid2";
+import useWidth from "../../hooks/useWidth";
 import HeadingStack from "../HeadingStack/HeadingStack";
 import SelectElement from "../SelectElement/SelectElement";
-import useFetchButtonMenu from "../../hooks/useFetchButtonMenu";
 import GroupedButton from "../GroupedButton/GroupedButton";
-import useWidth from "../../hooks/useWidth";
 import GroupedButtonMenu from "../GroupedButtonMenu/GroupedButtonMenu";
+import useFetchButtonMenu from "../../hooks/useFetchButtonMenu";
 
 const MainHeader = () => {
   const { headerButtonMenu, fetchHeaderButtonMenu } = useFetchButtonMenu();
@@ -27,7 +26,6 @@ const MainHeader = () => {
     >
       <HeadingStack
         gridPadding={1}
-        // gridSize={3}
         heading="Bloomy Height"
         subHeading="LMS/Properties List"
         subHeadingColor="grey"

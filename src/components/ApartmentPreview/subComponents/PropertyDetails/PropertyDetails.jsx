@@ -1,13 +1,13 @@
 import { Grid2 } from "@mui/material";
 import React, { useEffect } from "react";
-import { useCurrentApartmentsContext } from "../../context/CurrentApartmentContext";
 import HeadingStack from "../HeadingStack/HeadingStack";
-import useFetchButtonMenu from "../../hooks/useFetchButtonMenu";
 import GroupedButton from "../GroupedButton/GroupedButton";
 import ApartmentFloors from "../ApartmentFloors/ApartmentFloors";
+import GroupedButtonMenu from "../GroupedButtonMenu/GroupedButtonMenu";
+import { useCurrentApartmentsContext } from "../../context/CurrentApartmentContext";
+import useFetchButtonMenu from "../../hooks/useFetchButtonMenu";
 import useBookingMenu from "../../hooks/useBookingMenu";
 import useWidth from "../../hooks/useWidth";
-import GroupedButtonMenu from "../GroupedButtonMenu/GroupedButtonMenu";
 
 const PropertyDetails = () => {
   const { currentWing } = useCurrentApartmentsContext();

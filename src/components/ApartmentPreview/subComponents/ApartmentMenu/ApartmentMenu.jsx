@@ -2,21 +2,10 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
-import PersonAdd from "@mui/icons-material/PersonAdd";
-import Settings from "@mui/icons-material/Settings";
-import Logout from "@mui/icons-material/Logout";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
-import { Container, Grid2 } from "@mui/material";
-
-import BorderColorRoundedIcon from "@mui/icons-material/BorderColorRounded";
-import RemoveRedEyeRoundedIcon from "@mui/icons-material/RemoveRedEyeRounded";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import DvrRoundedIcon from "@mui/icons-material/DvrRounded";
+import { Grid2 } from "@mui/material";
 import ApartmentMenuItem from "../ApartmentMenuItem/ApartmentMenuItem";
 import { useBookingMenuContext } from "../../context/BookingMenuContext";
 
